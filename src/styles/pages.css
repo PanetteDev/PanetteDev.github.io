@@ -143,7 +143,7 @@
   position: relative;
   z-index: 1;
   display: block;
-  height: clamp(440px, 63vh, 620px);
+  height: clamp(470px, 67vh, 650px);
   width: auto;
   max-width: 100%;
   object-fit: contain;
