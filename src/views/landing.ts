@@ -3,7 +3,7 @@ import type { SiteData } from '../types.ts';
 import { esc } from '../utils/format.ts';
 import { icon } from '../utils/icons.ts';
 
-export function renderLanding(container: HTMLElement, data: SiteData): void {
+export function renderLanding(container: HTMLElement, _data: SiteData): void {
   container.innerHTML = `
     <div class="landing landing-minimal">
       <section class="hero hero-minimal">
@@ -18,10 +18,10 @@ export function renderLanding(container: HTMLElement, data: SiteData): void {
             <img class="wordmark-img wordmark-dark" src="./assets/panette-wordmark-dark.png" alt="Panette" />
           </h1>
 
-          <p class="hero-tagline">原生注入与零 QQ 进程 Pure 双引擎协议端</p>
+          <p class="hero-tagline">轻量、现代的 QQ NT OneBot 协议端</p>
 
           <p class="hero-sub">
-            单服务端混合托管多账号，完整支持消息、群管、实时 <code>rkey</code> 媒体、闪传与语音视频通话，内置 WebUI 与交互式接口文档。
+            支持本机客户端与无客户端纯协议两种模式，单服务跨平台托管多账号，开箱即用。
           </p>
 
           <div class="hero-actions">
@@ -41,16 +41,16 @@ export function renderLanding(container: HTMLElement, data: SiteData): void {
       <div class="landing-bottom">
         <section class="pillars" aria-label="核心特性">
           <a class="pillar" href="#/docs/pure-protocol">
-            <div class="pillar-head">${icon('layers', 15)}<span>原生注入 × Pure 纯协议</span></div>
-            <p>Windows、Linux Headless 与零 QQ 进程纯协议同台混跑，账号数据完全隔离。</p>
+            <div class="pillar-head">${icon('layers', 15)}<span>双引擎自由混跑</span></div>
+            <p>按需选择本机 QQ、Linux 无头或免客户端纯协议，多账号数据完全隔离。</p>
           </a>
           <a class="pillar" href="#/docs/api-onebot">
-            <div class="pillar-head">${icon('radio', 15)}<span>全链路 OneBot v11</span></div>
-            <p>HTTP、正反向 WebSocket、实时 <code>rkey</code> 补签、闪传、群相册与语音视频通话。</p>
+            <div class="pillar-head">${icon('radio', 15)}<span>完整协议能力</span></div>
+            <p>标准 HTTP / 正反向 WebSocket 接入，覆盖消息、群管、文件闪传与音视频通话。</p>
           </a>
-          <a class="pillar" href="#/api/send_group_msg">
-            <div class="pillar-head">${icon('file-code', 15)}<span>交互调试台与 OpenAPI 3.1</span></div>
-            <p>内置 ${data.stats.actionCount} 个公开动作、${data.stats.eventCount} 类主动上报事件与直连端点，可在线调试或导入 Apifox。</p>
+          <a class="pillar" href="#/docs/configuration">
+            <div class="pillar-head">${icon('sliders', 15)}<span>一体化 WebUI</span></div>
+            <p>扫码登录、网络配置热生效、实时日志与在线接口调试，打开浏览器即管。</p>
           </a>
         </section>
 
