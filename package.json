@@ -1,0 +1,19 @@
+{
+  "name": "panette-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Official documentation, landing page, and Apifox-style OneBot v11 API studio for Panette",
+  "scripts": {
+    "sync": "node scripts/sync-docs.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "build:all": "npm run sync && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 127.0.0.1 --port 4173"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
+  }
+}
