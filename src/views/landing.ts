@@ -33,7 +33,7 @@ export function renderLanding(container: HTMLElement, _data: SiteData): void {
 
         <div class="hero-art-wrap">
           <div class="hero-art-aura" aria-hidden="true"></div>
-          <img class="hero-art" src="./assets/hero-xiaomianbao.png?v=3" alt="Panette 小面包立绘" />
+          <img class="hero-art" src="./assets/hero-xiaomianbao.png?v=4" alt="Panette 小面包立绘" />
           <div class="hero-art-shadow" aria-hidden="true"></div>
         </div>
       </section>
